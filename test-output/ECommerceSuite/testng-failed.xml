@@ -8,28 +8,13 @@
   </listeners>
   <test thread-count="5" name="ECommerceTests(failed)">
     <classes>
-      <class name="com.example.tests.LoginTest">
+      <class name="com.example.tests.CartTotalTest">
         <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="invalidLoginShowsError"/>
-          <include name="validLogin"/>
-        </methods>
-      </class> <!-- com.example.tests.LoginTest -->
-      <class name="com.example.tests.AddToCartTest">
-        <methods>
-          <include name="addProductToCartTest"/>
+          <include name="addTwoItemsAndVerifyTotal"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.example.tests.AddToCartTest -->
-      <class name="com.example.tests.CheckoutTest">
-        <methods>
-          <include name="checkoutFlowTest"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.example.tests.CheckoutTest -->
+      </class> <!-- com.example.tests.CartTotalTest -->
     </classes>
   </test> <!-- ECommerceTests(failed) -->
 </suite> <!-- Failed suite [ECommerceSuite] -->
