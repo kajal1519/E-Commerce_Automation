@@ -8,6 +8,21 @@
   </listeners>
   <test thread-count="5" name="ECommerceTests(failed)">
     <classes>
+      <class name="com.example.tests.LoginTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="invalidLoginShowsError"/>
+          <include name="validLogin"/>
+        </methods>
+      </class> <!-- com.example.tests.LoginTest -->
+      <class name="com.example.tests.AddToCartTest">
+        <methods>
+          <include name="addProductToCartTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.example.tests.AddToCartTest -->
       <class name="com.example.tests.CheckoutTest">
         <methods>
           <include name="checkoutFlowTest"/>
