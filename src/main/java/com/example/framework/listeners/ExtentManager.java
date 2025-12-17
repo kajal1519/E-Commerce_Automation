@@ -9,7 +9,7 @@ public class ExtentManager {
 
     public synchronized static ExtentReports getExtentReports() {
         if (extent == null) {
-            String reportPath = System.getProperty("user.dir") + "/reports/ExtentReport.html";
+            String reportPath = System.getProperty("user.dir") + "/target/ExtentReports/extent-report.html";
             ExtentSparkReporter spark = new ExtentSparkReporter(reportPath);
             spark.config().setTheme(Theme.STANDARD);
             spark.config().setDocumentTitle("Automation Report");
