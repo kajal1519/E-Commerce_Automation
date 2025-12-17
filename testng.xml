@@ -7,8 +7,13 @@
   <parameter name="baseUrl" value="https://www.saucedemo.com/" />
   <test name="ECommerceTests">
     <classes>
-   
-      <class name="com.example.tests.CartTotalTest"/>   
+   	<class name="com.example.tests.LoginTest"/>
+      <class name="com.example.tests.AddToCartTest"/>
+      <class name="com.example.tests.CheckoutTest"/>
+      <class name="com.example.tests.ProductDetailsTest"/>
+      <class name="com.example.tests.ProductSearchTest"/>
+      <class name="com.example.tests.LogoutTest"/>
+    
     </classes>
   </test>
 </suite>

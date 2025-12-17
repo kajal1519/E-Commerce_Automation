@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>ECommerceTests</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>6/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Oct 09 10:22:00 IST 2025</td>
+<td>Started on:</td><td>Wed Dec 17 10:50:22 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>9 seconds (9093 ms)</td>
+<tr><td>Total time:</td><td>70 seconds (70393 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,15 +76,29 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.example.tests.CartTotalTest.addTwoItemsAndVerifyTotal()'><b>addTwoItemsAndVerifyTotal</b><br>Test class: com.example.tests.CartTotalTest</td>
-<td><div><pre>java.lang.RuntimeException: No products available to click!
-	at com.example.framework.pages.ProductsPage.clickProduct(ProductsPage.java:85)
-	at com.example.tests.CartTotalTest.addTwoItemsAndVerifyTotal(CartTotalTest.java:20)
+<td title='com.example.tests.ProductDetailsTest.validateProductDetails()'><b>validateProductDetails</b><br>Test class: com.example.tests.ProductDetailsTest</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: .inventory_details_name (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.14.0&apos;, revision: &apos;e5a96349ce&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 143.0.4, moz:accessibilityChecks: false, moz:buildID: 20251003115653, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 17568, moz:profile: C:\Users\kajal\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: d5e05f80-661e-4129-b159-c75cae33b482
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at com.example.framework.pages.ProductDetailsPage.getProductTitle(ProductDetailsPage.java:48)
+	at com.example.tests.ProductDetailsTest.validateProductDetails(ProductDetailsTest.java:29)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1673604690", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1673604690'><pre>java.lang.RuntimeException: No products available to click!
-	at com.example.framework.pages.ProductsPage.clickProduct(ProductsPage.java:85)
-	at com.example.tests.CartTotalTest.addTwoItemsAndVerifyTotal(CartTotalTest.java:20)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1738973904", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1738973904'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: .inventory_details_name (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.14.0&apos;, revision: &apos;e5a96349ce&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 143.0.4, moz:accessibilityChecks: false, moz:buildID: 20251003115653, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 17568, moz:profile: C:\Users\kajal\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: d5e05f80-661e-4129-b159-c75cae33b482
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at com.example.framework.pages.ProductDetailsPage.getProductTitle(ProductDetailsPage.java:48)
+	at com.example.tests.ProductDetailsTest.validateProductDetails(ProductDetailsTest.java:29)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -112,8 +126,47 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
+<td>20</td>
+<td>com.example.tests.ProductDetailsTest@3f1d2e23</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.example.tests.LogoutTest.userCanLogoutSuccessfully()'><b>userCanLogoutSuccessfully</b><br>Test class: com.example.tests.LogoutTest</td>
+<td></td>
+<td>1</td>
+<td>com.example.tests.LogoutTest@47c81abf</td></tr>
+<tr>
+<td title='com.example.tests.ProductSearchTest.filterProductsByPriceLowToHigh()'><b>filterProductsByPriceLowToHigh</b><br>Test class: com.example.tests.ProductSearchTest</td>
+<td></td>
 <td>0</td>
-<td>com.example.tests.CartTotalTest@15d49048</td></tr>
+<td>com.example.tests.ProductSearchTest@536dbea0</td></tr>
+<tr>
+<td title='com.example.tests.LoginTest.validLogin()'><b>validLogin</b><br>Test class: com.example.tests.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>com.example.tests.LoginTest@10289886</td></tr>
+<tr>
+<td title='com.example.tests.LoginTest.invalidLoginShowsError()'><b>invalidLoginShowsError</b><br>Test class: com.example.tests.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>com.example.tests.LoginTest@10289886</td></tr>
+<tr>
+<td title='com.example.tests.CheckoutTest.checkoutFlowTest()'><b>checkoutFlowTest</b><br>Test class: com.example.tests.CheckoutTest</td>
+<td></td>
+<td>1</td>
+<td>com.example.tests.CheckoutTest@4bff7da0</td></tr>
+<tr>
+<td title='com.example.tests.AddToCartTest.addProductToCartTest()'><b>addProductToCartTest</b><br>Test class: com.example.tests.AddToCartTest</td>
+<td></td>
+<td>3</td>
+<td>com.example.tests.AddToCartTest@638ef7ed</td></tr>
 </table><p>
 </body>
 </html>

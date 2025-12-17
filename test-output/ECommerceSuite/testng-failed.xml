@@ -8,13 +8,13 @@
   </listeners>
   <test thread-count="5" name="ECommerceTests(failed)">
     <classes>
-      <class name="com.example.tests.CartTotalTest">
+      <class name="com.example.tests.ProductDetailsTest">
         <methods>
-          <include name="addTwoItemsAndVerifyTotal"/>
+          <include name="validateProductDetails"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.example.tests.CartTotalTest -->
+      </class> <!-- com.example.tests.ProductDetailsTest -->
     </classes>
   </test> <!-- ECommerceTests(failed) -->
 </suite> <!-- Failed suite [ECommerceSuite] -->

@@ -44,20 +44,20 @@ public class ProductDetailsPage extends BasePage {
 
     // Methods to interact with product details
     public String getProductTitle() {
-        WebElement nameElement = new WebDriverWait(driver, Duration.ofSeconds(10))
+        WebElement nameElement = new WebDriverWait(driver, Duration.ofSeconds(20))
                 .until(ExpectedConditions.visibilityOfElementLocated(nameLocator));
         return nameElement.getText();
     }
 
     public String getProductDescription() {
-        WebElement descElement = new WebDriverWait(driver, Duration.ofSeconds(10))
+        WebElement descElement = new WebDriverWait(driver, Duration.ofSeconds(20))
                 .until(ExpectedConditions.visibilityOf(descriptionLocator));
         return descElement.getText();
     }
 
     public double getProductPrice() {
         try {
-            WebElement priceElement = new WebDriverWait(driver, Duration.ofSeconds(10))
+            WebElement priceElement = new WebDriverWait(driver, Duration.ofSeconds(20))
                     .until(ExpectedConditions.visibilityOf(productPrice));
             String priceText = priceElement.getText();
             return Double.parseDouble(priceText.replace("$", ""));

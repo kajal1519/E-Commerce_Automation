@@ -33,6 +33,12 @@
       <artifactId>extentreports</artifactId>
       <version>5.0.9</version>
     </dependency>
+   <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+<dependency>
+    <groupId>org.projectlombok</groupId>
+    <artifactId>lombok</artifactId>
+    <version>1.18.42</version>
+</dependency>
   </dependencies>
   <build>
     <plugins>
