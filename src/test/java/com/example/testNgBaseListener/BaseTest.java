@@ -1,8 +1,10 @@
-package com.example.framework.core;
+package com.example.testNgBaseListener;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+
+import com.example.framework.core.DriverFactory;
 
 public class BaseTest {
     protected WebDriver driver;

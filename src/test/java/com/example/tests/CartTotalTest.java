@@ -1,12 +1,13 @@
 package com.example.tests;
 
-import com.example.framework.core.BaseTest;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
 import com.example.framework.pages.CartPage;
 import com.example.framework.pages.LoginPage;
 import com.example.framework.pages.ProductDetailsPage;
 import com.example.framework.pages.ProductsPage;
-import org.testng.Assert;
-import org.testng.annotations.Test;
+import com.example.testNgBaseListener.BaseTest;
 
 public class CartTotalTest extends BaseTest {
 

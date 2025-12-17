@@ -1,8 +1,8 @@
 package com.example.tests;
 
-import com.example.framework.core.BaseTest;
 import com.example.framework.pages.LoginPage;
 import com.example.framework.pages.ProductsPage;
+import com.example.testNgBaseListener.BaseTest;
 import com.example.framework.pages.CartPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;

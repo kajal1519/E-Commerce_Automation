@@ -1,4 +1,4 @@
-package com.example.framework.listeners;
+package com.example.testNgBaseListener;
 
 import org.testng.ITestContext;
 import org.testng.ITestListener;
@@ -7,6 +7,7 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.example.framework.core.DriverFactory;
+import com.example.framework.listeners.ExtentManager;
 import com.example.framework.utils.ScreenshotUtil;
 
 public class TestListener implements ITestListener {
