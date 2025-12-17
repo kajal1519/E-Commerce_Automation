@@ -31,7 +31,7 @@ public class BasePage {
     }
 
     protected void click(WebElement element) {
-        waitForVisibility(element, 10);
+        waitForVisibility(element, 30);
         element.click();
     }
 

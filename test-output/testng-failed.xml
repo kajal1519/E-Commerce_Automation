@@ -4,15 +4,15 @@
   <parameter name="baseUrl" value="https://www.saucedemo.com/"/>
   <parameter name="browser" value="chrome"/>
   <listeners>
-    <listener class-name="com.example.framework.listeners.TestListener"/>
+    <listener class-name="com.example.testNgBaseListener.TestListener"/>
   </listeners>
   <test thread-count="5" name="ECommerceTests(failed)">
     <classes>
       <class name="com.example.tests.ProductDetailsTest">
         <methods>
           <include name="validateProductDetails"/>
-          <include name="setUp"/>
           <include name="tearDown"/>
+          <include name="setUp"/>
         </methods>
       </class> <!-- com.example.tests.ProductDetailsTest -->
     </classes>
